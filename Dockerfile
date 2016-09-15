@@ -30,7 +30,7 @@ RUN add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ trusty universe
     apt-get autoremove && \
     apt-get autoclean && \
 	pip install --upgrade setuptools && \ 
-    pip install transmissionrpc && \ 
+    easy_install transmissionrpc && \ 
     pip install flexget && \ 
     pip install --upgrade six>=1.70 && \
     ln -sf /config /root/.flexget
